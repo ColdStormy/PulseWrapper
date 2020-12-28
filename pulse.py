@@ -75,7 +75,7 @@ def readSinks():
             
             continue
         
-        if( "device.product.name" in l and current_level == 2):
+        if( "device.description" in l and current_level == 2):
             name = l.lstrip()
             name = name[name.find("=")+1:]
             name = name.replace('"', '')
